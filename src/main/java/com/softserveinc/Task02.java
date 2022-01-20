@@ -1,5 +1,6 @@
 package com.softserveinc;
 
+import java.sql.SQLOutput;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -34,5 +35,25 @@ public class Task02 {
         Scanner scanner = new Scanner(System.in);
         // TODO: Write your code here
 
+        System.out.print("t1 " + ">>> " );
+        double t1 = scanner.nextDouble();
+
+        System.out.print("t2 " + ">>> " );
+        double t2 = scanner.nextDouble();
+
+        System.out.print("dt " + ">>> " );
+        double dt = scanner.nextDouble();
+
+        System.out.println("-----------------");
+        System.out.println(" C         F  ");
+        System.out.println("-----------------");
+        while (t1 <= t2) {
+            double fahrenheit = 9 * t1 / 5 + 32;
+
+            System.out.printf(Locale.ENGLISH,"%.2f      %.2f\n", t1, fahrenheit);
+            t1 = t1 +dt;
+
+        }
+        System.out.println("-----------------");
     }
 }

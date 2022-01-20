@@ -21,8 +21,29 @@ import java.util.Scanner;
  */
 public class Task03 {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         // TODO: Write your code here
 
+
+        int min = 0;
+        boolean firstIteration = true;
+
+        System.out.print(">>> " );
+        int num = scanner.nextInt();
+        while(num != 0) {
+            if(firstIteration) {
+                min = num;
+                firstIteration = false;
+            } else {
+                min = Math.min(num, min);
+            }
+            System.out.print(">>> " );
+            num = scanner.nextInt();
+        }
+        System.out.println("Minimum number is " + min);
+
+        }
+
     }
-}
+
