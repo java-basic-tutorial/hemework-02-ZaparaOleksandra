@@ -25,11 +25,10 @@ public class Task01 {
         double[] temperature = {-1.7, -1.0, 2.6, 9.0, 15.1, 19.4, 21.4, 21.2, 17.1, 11.1, 5.9, 1.4};
         // TODO: Write your code here
 
-        double averageTemp = 0;
+        double averageTemp;
         int minTemp = 0;
         int maxTemp =0;
-        if (temperature.length > 0) {
-            double sum = 0;
+        double sum = 0;
             for (int j = 0; j < temperature.length; j++) {
                 sum += temperature[j];
                 if (temperature[j] < temperature [minTemp]) {
@@ -122,14 +121,4 @@ public class Task01 {
             }
         }
 
-
-//        double arg = temperature.length / 12;
-//
-//        for (double i = 0; i < temperature.length; i++) {
-//                System.out.println("Average annual temperature: " + arg);
-//            }
-//        }
-
-
     }
-}
